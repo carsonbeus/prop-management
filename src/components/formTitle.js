@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export function FormTitle(props) {
+export default function FormTitle(props) {
     const { className, text } = props;
     return (
-        <h1 className={`${className}`}>{text}</h1>
+        <h1 className={`${className} form-title`}>{text}</h1>
     )
 }

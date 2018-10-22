@@ -1,13 +1,11 @@
-.header-wrapper {
+.header {
     grid-row: header-s/header-e;
     grid-column: content-s/content-e;
 
     display: grid;
-    grid-template-columns: [s] 1fr [e]; 
+    grid-template-columns: [s] 1fr [e];
     grid-template-rows: [title-s] 3rem [title-e sub-s] 2rem [sub-e];
     
-
-
     &__title {
         grid-row: title-s/title-e;
         grid-column: s/e;
@@ -18,9 +16,9 @@
     }
 }
 
-.header-wrapper {
+.header {
     padding-top: 4rem;
-
+    
     &__title {
         font-size: 2.4rem;
         font-weight: 500;
@@ -31,7 +29,5 @@
         font-size: 1.6rem;
         font-weight: 300;
         line-height: 2rem;
-
-
     }
 }
