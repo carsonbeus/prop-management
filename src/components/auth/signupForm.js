@@ -16,47 +16,40 @@ class SignupForm extends Component {
                 <Field
                     className='sign-up-form__fullname'
                     placeholder='Enter Your Full Name'
+                    component={FormInput}
                     name='fullname'
                     title="Full Name"
-                    type='text' 
-                    component={FormInput}
-                    />
-                    
+                    type='text' />
                 <Field
                     className='sign-up-form__unit'
                     placeholder='Enter Unit #'
+                    component={FormInput}
                     name='unit'
                     title="Unit #"
-                    type='text' 
-                    component={FormInput}
-                    />
+                    type='text' />
                 <Field
                     className='sign-up-form__email'
                     placeholder='Enter Email'
+                    component={FormInput}
                     name='email'
                     title="Email"
-                    type='email' 
-                    component={FormInput}
-                    />
+                    type='email' />
                 <Field
                     className='sign-up-form__password'
                     placeholder='Enter Password'
+                    component={FormInput}
                     name='password'
                     title="Password"
-                    type='password' 
-                    component={FormInput}
-                    />
+                    type='password' />
                 <Field
                     className='sign-up-form__create-account'
+                    component={FormButton}
                     name='createaccount'
                     title="Create Account"
-                    type='submit' 
-                    component={FormButton}
-                    />
+                    type='submit' />
 
-                <div className='sign-up-form__text-links'>
-                    <TextLink to='/forgot' text='Forgot Password' />
-                    <TextLink to='/signup' text='Not a member? Register here' />
+                <div className="sign-up-form__text-links">
+                    <TextLink to='/signin' text='Already Registered? Login' />
                 </div>
             </form>
         )
